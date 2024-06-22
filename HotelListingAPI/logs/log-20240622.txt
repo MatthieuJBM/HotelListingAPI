@@ -1,0 +1,5 @@
+2024-06-22 17:49:35.533 +02:00 [INF] Now listening on: http://localhost:5023
+2024-06-22 17:49:35.590 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-22 17:49:35.591 +02:00 [INF] Hosting environment: Development
+2024-06-22 17:49:35.591 +02:00 [INF] Content root path: /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI
+2024-06-22 17:49:57.124 +02:00 [WRN] Failed to determine the https port for redirect.

@@ -14,6 +14,6 @@ public class Country
      * allows EF to create a proxy around the property to enable lazy loading.
      */
     
-    public virtual IList<Hotel> Hotels { get; set; }
+    public virtual IList<Hotel>? Hotels { get; set; }
     
 }
