@@ -303,3 +303,4 @@
 /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI/bin/Debug/net8.0/Serilog.Sinks.File.dll
 /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI/bin/Debug/net8.0/Serilog.Sinks.PeriodicBatching.dll
 /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI/bin/Debug/net8.0/Serilog.Sinks.Seq.dll
+/Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI/bin/Debug/net8.0/AutoMapper.dll
