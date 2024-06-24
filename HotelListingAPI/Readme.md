@@ -28,4 +28,17 @@
     await - The await keyword provides a non-blocking way to start a task, then continue execution when that task completes.
 
     ActionResult - An action is capable of returning a specific data type (see WeatherForecastController action).  When multiple return types are possible, it's common to return ActionResult, IActionResult or ActionResult<T>, where T represents the data type to be returned.
-12. 
+
+USING AUTOMAPPER
+1. Automapper maps objects from one type to another.
+2. Add AutoMapper from NuGets.
+3. Create a file MapperConfig that extends "Profile" and write the following in the constructor: CreateMap<Country, CreateCountryDto>().ReverseMap();
+4. Add the following line in Program.cs: builder.Services.AddAutoMapper(typeof(MapperConfig));
+5. We inject the MapperConfig into our CountriesController:
+   private readonly IMapper _mapper;
+   public CountriesController(HotelListingDbContext context, IMapper mapper)
+     {
+         _context = context;
+         this._mapper = mapper;
+     }
+6. 

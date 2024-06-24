@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -20,10 +21,12 @@ namespace HotelListingAPI.Controllers
          * almost anywhere in our program.
          */
         private readonly HotelListingDbContext _context;
+        private readonly IMapper _mapper;
 
-        public CountriesController(HotelListingDbContext context)
+        public CountriesController(HotelListingDbContext context, IMapper mapper)
         {
             _context = context;
+            this._mapper = mapper;
         }
 
         // GET: api/Countries
@@ -84,17 +87,19 @@ namespace HotelListingAPI.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountry)
+        public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountryDto)
         {
-            var country = new Country
-            {
-                Name = createCountry.Name,
-                ShortName = createCountry.ShortName,
-            };
-            
+            // var countryOld = new Country
+            // {
+            //     Name = createCountryDto.Name,
+            //     ShortName = createCountryDto.ShortName,
+            // };
+
             /*
              * Now after the lines above, even if someone puts an id in a request, it will be ignored.
              */
+
+            var country = _mapper.Map<Country>(createCountryDto);
 
             _context.Countries.Add(country);
             await _context.SaveChangesAsync();

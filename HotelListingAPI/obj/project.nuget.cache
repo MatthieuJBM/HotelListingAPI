@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "oJnww03tMYDsKhHgK9lFThsjWIF+Md5NGwLccPbRLs7YiZos3EFaGt7ZTr3iXz4TM2EVDRhAkETUvsbxZDvP3w==",
+  "dgSpecHash": "UimUjHqkAN7ZmQWmq5sdgpQNLWrL3+c2dWe+dZCFU7jfsGoNMAPuNrFMJK538+LvGKnDopoo0F0sFQRjGNtOKA==",
   "success": true,
   "projectFilePath": "/Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI/HotelListingAPI.csproj",
   "expectedPackageFiles": [
+    "/Users/mbaryla/.nuget/packages/automapper/13.0.1/automapper.13.0.1.nupkg.sha512",
     "/Users/mbaryla/.nuget/packages/azure.core/1.35.0/azure.core.1.35.0.nupkg.sha512",
     "/Users/mbaryla/.nuget/packages/azure.identity/1.10.3/azure.identity.1.10.3.nupkg.sha512",
     "/Users/mbaryla/.nuget/packages/bouncycastle.cryptography/2.2.1/bouncycastle.cryptography.2.2.1.nupkg.sha512",
