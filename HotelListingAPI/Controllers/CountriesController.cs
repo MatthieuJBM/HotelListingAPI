@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using HotelListingAPI.Data;
+using HotelListingAPI.Models.Country;
 
 namespace HotelListingAPI.Controllers
 {
@@ -29,7 +30,9 @@ namespace HotelListingAPI.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Country>>> GetCountries()
         {
-            return await _context.Countries.ToListAsync();
+            //return await _context.Countries.ToListAsync();
+            var countries = await _context.Countries.ToListAsync();
+            return Ok(countries);
         }
 
         // GET: api/Countries/5
@@ -43,7 +46,8 @@ namespace HotelListingAPI.Controllers
                 return NotFound();
             }
 
-            return country;
+            //return country;
+            return Ok(country);
         }
 
         // PUT: api/Countries/5
@@ -80,8 +84,18 @@ namespace HotelListingAPI.Controllers
         // POST: api/Countries
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<ActionResult<Country>> PostCountry(Country country)
+        public async Task<ActionResult<Country>> PostCountry(CreateCountryDto createCountry)
         {
+            var country = new Country
+            {
+                Name = createCountry.Name,
+                ShortName = createCountry.ShortName,
+            };
+            
+            /*
+             * Now after the lines above, even if someone puts an id in a request, it will be ignored.
+             */
+
             _context.Countries.Add(country);
             await _context.SaveChangesAsync();
 
