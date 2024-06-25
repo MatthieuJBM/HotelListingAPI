@@ -41,4 +41,9 @@ USING AUTOMAPPER
          _context = context;
          this._mapper = mapper;
      }
-6. 
+
+REPOSITORIES
+1. Contract represents the abstraction of a class and the repository will represent the implementation of that class.
+2. Interface is like a contract, it is enforcing what should happen. Think of a contract as a paperwork. When you sign up a contract you are stating that you agree to do certain things right.
+3. Now that we have our specific repository is created we need to register it in our Program.cs
+4. 
