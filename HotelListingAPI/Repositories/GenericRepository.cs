@@ -37,7 +37,7 @@ public class GenericRepository<T> : IGenericRepository<T> where T : class
         return entity != null;
     }
 
-    public async Task<List<T>> GelAllAsync()
+    public async Task<List<T>> GetAllAsync()
     {
         return await _context.Set<T>().ToListAsync();
     }
