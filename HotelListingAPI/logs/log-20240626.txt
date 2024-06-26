@@ -3,3 +3,13 @@
 2024-06-26 17:43:56.696 +02:00 [INF] Hosting environment: Development
 2024-06-26 17:43:56.696 +02:00 [INF] Content root path: /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI
 2024-06-26 18:30:34.017 +02:00 [INF] Application is shutting down...
+2024-06-26 23:02:43.751 +02:00 [INF] Now listening on: http://localhost:5023
+2024-06-26 23:02:43.818 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-26 23:02:43.818 +02:00 [INF] Hosting environment: Development
+2024-06-26 23:02:43.818 +02:00 [INF] Content root path: /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI
+2024-06-26 23:07:07.757 +02:00 [INF] Application is shutting down...
+2024-06-26 23:07:33.506 +02:00 [INF] Now listening on: http://localhost:5023
+2024-06-26 23:07:33.628 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-06-26 23:07:33.629 +02:00 [INF] Hosting environment: Development
+2024-06-26 23:07:33.629 +02:00 [INF] Content root path: /Users/mbaryla/RiderProjects/HotelListingAPI/HotelListingAPI
+2024-06-26 23:08:01.137 +02:00 [WRN] Failed to determine the https port for redirect.
